@@ -1,16 +1,16 @@
 <template>
   <div class="container">
-    <div class="main_wrapper">
-      <div class="logo">
-        <img class="mikanLogo" src="../static/mikan_logo.png" />
-        <img class="tunaLogo" src="../static/tuna_logo.png" />
+      <div class="main_wrapper">
+          <div class="logo">
+              <img class="mikanLogo" src="../static/mikan_logo.png" />
+              <img class="tunaLogo" src="../static/tuna_logo.png" />
+          </div>
+          <div class="title_img">
+              <img class="nameLogo" src="../static/name_logo.png" />
+          </div>
+          <div class="link_left">WORKS</div>
+          <div class="link_right">ABOUT US</div>
       </div>
-      <div class="title_img">
-        <img class="nameLogo" src="../static/name_logo.png" />
-      </div>
-      <div class="link_left">WORKS</div>
-      <div class="link_right">ABOUT US</div>
-    </div>
   </div>
 </template>
 
@@ -61,23 +61,19 @@ export default {
   margin: auto;
   display: flex;
   align-items: center;
-  height: 50px;
-  width: 100px;
 }
 
 .mikanLogo {
-  height: 12vw;
-  max-height: 56px;
-  margin: 0 8px 0 0;
+  height: calc(4vw + 4vh);
+  margin: 0 12px 0 0;
 }
 
 .tunaLogo {
-  height: 12vw;
-  max-height: 56px;
+  height: calc(4vw + 4vh);
 }
 
 .nameLogo {
-  width: 100%;
+  width: calc(22vw + 22vh);
 }
 
 .title_img {
@@ -91,7 +87,7 @@ export default {
   align-items: center;
   justify-content: center;
   height: 100px;
-  width: 80%;
+  width: 100%;
 }
 
 .link_left {
@@ -100,7 +96,7 @@ export default {
   left: 0;
   margin: auto;
   color: white;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 .link_right {
@@ -109,6 +105,6 @@ export default {
   right: 0;
   margin: auto;
   color: white;
-  font-weight: 600;
+  font-weight: 900;
 }
 </style>
