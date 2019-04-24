@@ -20,7 +20,6 @@ export default {
   name: 'index',
   data() {
     return {
-      test: 'hello'
     }
   },
 }
@@ -52,7 +51,7 @@ export default {
   bottom: 0;
   left: 0;
   margin: auto;
-  height: calc(100vh - 80px);
+  height: calc(100% - 80px);
   width: calc(100vw - 80px);
 }
 .logo {
@@ -67,12 +66,14 @@ export default {
 }
 
 .mikanLogo {
-  width: 12vw;
+  height: 12vw;
+  max-height: 56px;
   margin: 0 8px 0 0;
 }
 
 .tunaLogo {
-  width: 20vw;
+  height: 12vw;
+  max-height: 56px;
 }
 
 .nameLogo {
