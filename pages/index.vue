@@ -1,11 +1,12 @@
 <template>
   <div class="container">
       <div class="logo">
-          <img class="mikanLogo" src="../static/mikan_logo.png" />            <img class="tunaLogo" src="../static/tuna_logo.png" />
+          <img class="mikanLogo" alt="みかんの絵" src="../static/mikan_logo.png" />
+          <img class="tunaLogo" alt="マグロの絵" src="../static/tuna_logo.png" />
       </div>
       <div class="main_wrapper">
           <div class="title_img">
-              <img class="nameLogo" src="../static/name_logo.png" />
+              <img class="nameLogo"  alt="みかんの国から" src="../static/name_logo.png" />
           </div>
           <div class="link_left">WORKS</div>
           <div class="link_right"><nuxt-link to="/about">ABOUT US</nuxt-link></div>

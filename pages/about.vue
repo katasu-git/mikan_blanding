@@ -84,7 +84,7 @@ export default {
 
 .contents_wrapper {
     width: 100%;
-    max-width: 800px;
+    max-width: 720px;
     height: 90%;
     margin: calc(2vh + 4vw) 0 0 0;
     padding: calc(1vh + 1vw);
@@ -92,7 +92,7 @@ export default {
     /* minmax(最小,最大) */
     /* repeat(ボックスの数, ブロック幅) */
     /* grid-template-columns: 2fr 1fr → 2:1 で配置 */
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     grid-auto-rows: 320px;  /* 高さの最小 */
     grid-gap: calc(1vh + 1vw);
     overflow: auto;
