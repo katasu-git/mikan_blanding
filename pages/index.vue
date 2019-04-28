@@ -1,10 +1,10 @@
 <template>
   <div class="container">
-      <div class="logo">
-          <img class="mikanLogo" alt="みかんの絵" src="../static/mikan_logo.png" />
-          <img class="tunaLogo" alt="マグロの絵" src="../static/tuna_logo.png" />
-      </div>
       <div class="main_wrapper">
+          <div class="logo">
+              <img class="mikanLogo" alt="みかんの絵" src="../static/mikan_logo.png" />
+              <img class="tunaLogo" alt="マグロの絵" src="../static/tuna_logo.png" />
+          </div>
           <div class="title_img">
               <img class="nameLogo"  alt="みかんの国から" src="../static/name_logo.png" />
           </div>
@@ -27,50 +27,34 @@ export default {
 
 <style lamg="scss" scoped>
 .container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 100vh;
   width: 100vw;
+  min-width: 320px;
   background-color: black;
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  color: #35495e;
-  letter-spacing: 1px;
+  overflow: auto; /*main_wrapperがはみ出したらスクロール*/
 }
 
 .main_wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  height: calc(100% - 80px);
-  width: calc(100vw - 80px);
+  height: 100vh;
+  width: 100%;
+  padding: 32px;
+  position: relative;
 }
 
 .logo {
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  margin: auto;
+  height: 40px;
+  width: calc(100vw - 32px * 2 - 60vw);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .mikanLogo {
-  height: calc(3vw + 3vh);
-  margin: 0 12px 0 0;
+  width: 36%;
+  margin-right: 8px;
 }
 
 .tunaLogo {
-  height: calc(3vw + 3vh);
+  width: 56%;
 }
 
 .nameLogo {
@@ -95,7 +79,7 @@ export default {
   position: absolute;
   bottom: 0;
   left: 0;
-  margin: auto;
+  margin: 32px;
   color: white;
   font-weight: 900;
 }
@@ -104,8 +88,76 @@ export default {
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: auto;
+  margin: 32px;
   color: white;
   font-weight: 900;
 }
+
+@media screen and (min-width:480px) {
+
+.main_wrapper {
+  padding: 64px;
+}
+
+.logo {
+  height: 56px;
+  width: calc(100vw - 64px * 2 - 60vw);
+}
+
+.link_right , .link_left {
+  margin: 64px;
+}
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+
+.main_wrapper {
+  padding: 96px;
+}
+
+.logo {
+  height: 56px;
+  width: calc(100vw - 96px * 2 - 60vw);
+}
+
+.link_right , .link_left {
+  margin: 96px;
+}
+
+}
+
+@media screen and (min-width:1024px) {
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_wrapper {
+  padding: 128px;
+  max-width: 1024px;
+}
+
+.logo {
+  height: 56px;
+  width: calc(100vw - 128px * 2 - 60vw);
+  max-width: 154px;
+}
+
+.mikanLogo {
+  max-width: 56px;
+}
+
+.tunaLogo {
+  max-width: 72px;
+}
+
+.link_right , .link_left {
+  margin: 128px;
+}
+
+}
+
 </style>

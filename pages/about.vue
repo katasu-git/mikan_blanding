@@ -31,10 +31,6 @@ export default {
   width: 100vw;
   min-width: 320px;
   background-color: black;
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
   overflow: auto; /*main_wrapperがはみ出したらスクロール*/
 }
 
