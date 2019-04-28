@@ -27,9 +27,6 @@ export default {
 
 <style lamg="scss" scoped>
 
-html , body {
-}
-
 .container {
   height: 100vh;
   width: 100vw;
@@ -66,7 +63,7 @@ html , body {
   position: relative;
   height: 60vw;
   width: 100%;
-  margin-top: 32px;
+  margin: 32px 0;
 }
 
 .aboutus {
@@ -119,7 +116,7 @@ html , body {
 
 .sub_wrapper {
   height: 60vw;
-  margin-top: 64px;
+  margin: 64px 0;
 }
 
 }
@@ -145,7 +142,7 @@ html , body {
 
 .sub_wrapper {
   height: 60vw;
-  margin-top: 96px;
+  margin: 96px 0;
 }
 
 }
