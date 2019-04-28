@@ -26,209 +26,170 @@ export default {
 </script>
 
 <style lamg="scss" scoped>
+
+html , body {
+}
+
 .container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 100vh;
+  height: 100vh;
   width: 100vw;
+  min-width: 320px;
   background-color: black;
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
-  color: #35495e;
 }
 
 .main_wrapper {
   height: 100%;
   width: 100%;
-  padding: 8vmin;
+  padding: 32px;
 }
 
-@media screen and (min-height:320px) and (max-height:415px) and (max-width:737px){
+.logo {
+  position: absolute;
+  height: 40px;
+  display: flex;
+}
 
-/* iPhone5, iPhone6~8 & plus */
+.mikanLogo {
+  height: 40px;
+  margin-right: 8px;
+}
+
+.tunaLogo {
+  height: 40px;
+}
+
+.sub_wrapper {
+  position: relative;
+  height: 60vw;
+  width: 100%;
+  margin-top: calc(40px + 32px);
+}
+
+.aboutus {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 10vw;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 8vw;
+  font-weight: 900;
+  z-index: 2;
+}
+
+.img_wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 60vw;
+  width: 60vw;
+  z-index: 1;
+  background-color: brown;
+}
+
+@media screen and (min-width:480px) {
+
+.container {
+  height: 250vh;
+}
 
 .main_wrapper {
-  height: 100%;
-  width: 100%;
-  padding: 16vmin;
-  overflow: scroll;
-}
-
-.sub_wrapper {
-    position: relative;
-    height: 96vmin;
-    margin-top: 16vmin;
-}
-
-.img_wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 96vmin;
-    height: 96vmin;
-    z-index: 1;
-    background-color: orangered;
-}
-
-.aboutus {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    width: 200px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 16vmin;
-    font-weight: 900;
-    white-space: nowrap;
-    z-index: 2;
+  padding: 64px;
 }
 
 .logo {
-    width: calc(100vw - 16vmin * 2 - 96vmin);
-    height: 32vmin;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 56px;
 }
 
 .mikanLogo {
-    width: 37%;
-    margin-right: 6%;
+  height: 56px;
+  margin-right: 8px;
 }
 
 .tunaLogo {
-    width: 57%;
+  height: 56px;
+}
+
+.sub_wrapper {
+  height: 60vw;
+  margin-top: calc(56px + 64px);
 }
 
 }
 
-@media screen and (min-height:320px) and (max-height:415px) and (min-width:811px) {
-
-/* iPhoneX , XS Max */
+@media screen and (min-width:768px) and (max-width:1024px) {
 
 .main_wrapper {
-  height: 100%;
-  width: 100%;
-  padding: 16vmin;
-  overflow: scroll;
-}
-
-.sub_wrapper {
-    position: relative;
-    height: 120vmin;
-    margin-top: 16vmin;
-}
-
-.img_wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 120vmin;
-    height: 120vmin;
-    z-index: 1;
-    background-color: orangered;
-}
-
-.aboutus {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    width: 200px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 16vmin;
-    font-weight: 900;
-    white-space: nowrap;
-    z-index: 2;
+  padding: 96px;
 }
 
 .logo {
-    width: calc(100vw - 16vmin * 2 - 120vmin);
-    height: 32vmin;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 72px;
 }
 
 .mikanLogo {
-    width: 37%;
-    margin-right: 6%;
+  height: 72px;
+  margin-right: 8px;
 }
 
 .tunaLogo {
-    width: 57%;
+  height: 72px;
 }
-
-}
-
-@media screen and (min-height:568px) {
-
-  /* 縦画面 */
 
 .sub_wrapper {
-    position: relative;
-    height: 64vmin;
-    margin-top: 8vmin;
+  height: 60vw;
+  margin-top: calc(72px + 96px);
 }
 
-.aboutus {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    width: 200px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 6vmin;
-    font-weight: 900;
-    white-space: nowrap;
-    z-index: 2;
 }
 
-.img_wrapper {
-    position: absolute;
-    right: 0;
-    width: 64vmin;
-    height: 64vmin;
-    z-index: 1;
-    background-color: orangered;
+@media screen and (min-width:1024px) {
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_wrapper {
+  padding: 128px;
+  max-width: 1024px;
 }
 
 .logo {
-    width: calc(100vw - 8vmin * 2 - 64vmin);
-    height: 16vmin;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 72px;
 }
 
 .mikanLogo {
-    width: 37%;
-    margin-right: 6%;
+  height: 72px;
+  margin-right: 8px;
 }
 
 .tunaLogo {
-    width: 57%;
+  height: 72px;
+}
+
+.sub_wrapper {
+  max-height: 640px;
+}
+
+.aboutus {
+  max-width: 640px;
+  max-height: 200px;
+  font-size: 80px;
+}
+
+.img_wrapper {
+  max-height: 640px;
+  max-width: 640px;
 }
 
 }
-
-
 </style>
