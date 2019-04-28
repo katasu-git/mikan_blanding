@@ -39,6 +39,7 @@ html , body {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
+  overflow: auto;
 }
 
 .main_wrapper {
@@ -48,7 +49,6 @@ html , body {
 }
 
 .logo {
-  position: absolute;
   height: 40px;
   display: flex;
 }
@@ -66,7 +66,7 @@ html , body {
   position: relative;
   height: 60vw;
   width: 100%;
-  margin-top: calc(40px + 32px);
+  margin-top: 32px;
 }
 
 .aboutus {
@@ -97,7 +97,7 @@ html , body {
 @media screen and (min-width:480px) {
 
 .container {
-  height: 250vh;
+  height: 100vh;
 }
 
 .main_wrapper {
@@ -119,7 +119,7 @@ html , body {
 
 .sub_wrapper {
   height: 60vw;
-  margin-top: calc(56px + 64px);
+  margin-top: 64px;
 }
 
 }
@@ -145,7 +145,7 @@ html , body {
 
 .sub_wrapper {
   height: 60vw;
-  margin-top: calc(72px + 96px);
+  margin-top: 96px;
 }
 
 }
