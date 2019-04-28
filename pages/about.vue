@@ -28,7 +28,6 @@ export default {
 <style lamg="scss" scoped>
 
 .container {
-  height: 100vh;
   width: 100vw;
   min-width: 320px;
   background-color: black;
@@ -36,7 +35,7 @@ export default {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
-  overflow: auto;
+  overflow: auto; /*main_wrapperがはみ出したらスクロール*/
 }
 
 .main_wrapper {
@@ -47,22 +46,25 @@ export default {
 
 .logo {
   height: 40px;
+  width: calc(100vw - 32px * 2 - 60vw);
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mikanLogo {
-  height: 40px;
+  width: 36%;
   margin-right: 8px;
 }
 
 .tunaLogo {
-  height: 40px;
+  width: 56%;
 }
 
 .sub_wrapper {
   position: relative;
   height: 60vw;
-  width: 100%;
+  width: calc(100vw - 32px * 2);
   margin: 32px 0;
 }
 
@@ -93,29 +95,17 @@ export default {
 
 @media screen and (min-width:480px) {
 
-.container {
-  height: 100vh;
-}
-
 .main_wrapper {
   padding: 64px;
 }
 
 .logo {
   height: 56px;
-}
-
-.mikanLogo {
-  height: 56px;
-  margin-right: 8px;
-}
-
-.tunaLogo {
-  height: 56px;
+  width: calc(100vw - 64px * 2 - 60vw);
 }
 
 .sub_wrapper {
-  height: 60vw;
+  width: calc(100vw - 64px * 2);
   margin: 64px 0;
 }
 
@@ -129,19 +119,11 @@ export default {
 
 .logo {
   height: 72px;
-}
-
-.mikanLogo {
-  height: 72px;
-  margin-right: 8px;
-}
-
-.tunaLogo {
-  height: 72px;
+  width: calc(100vw - 96px * 2 - 60vw);
 }
 
 .sub_wrapper {
-  height: 60vw;
+  width: calc(100vw - 96px * 2);
   margin: 96px 0;
 }
 
@@ -162,30 +144,25 @@ export default {
 
 .logo {
   height: 72px;
-}
-
-.mikanLogo {
-  height: 72px;
-  margin-right: 8px;
-}
-
-.tunaLogo {
-  height: 72px;
+  width: 200px;
+  max-width: 220px;
 }
 
 .sub_wrapper {
-  max-height: 640px;
+  max-height: 620px;
+  max-width: 820px;
+  margin: 128px 0;
 }
 
 .aboutus {
-  max-width: 640px;
+  max-width: 620px;
   max-height: 200px;
   font-size: 80px;
 }
 
 .img_wrapper {
-  max-height: 640px;
-  max-width: 640px;
+  max-height: 620px;
+  max-width: 620px;
 }
 
 }
